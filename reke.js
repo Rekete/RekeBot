@@ -8,4 +8,4 @@ client.on('message', (message) => {
     commands.execute(client, message);
 });
 
-core.login(client);
+client.login(process.env.BOT_TOKEN);
