@@ -1,3 +1,4 @@
+import * as commands from './commands/commands';
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -11,9 +12,6 @@ client.on('message', message => {
   	}
 
 });
-
-import * as commands from './commands/commands';
-
 
 client.on('message', (message) => {
     commands.execute(client, message);
