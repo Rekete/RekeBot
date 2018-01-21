@@ -1,4 +1,3 @@
-import * as commands from './commands/commands';
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
