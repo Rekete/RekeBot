@@ -4,7 +4,7 @@ import * as commands from './commands/commands';
 
 const client = new Discord.Client();
 
-client.on('message', (message) => {
+client.on('message', message => {
     commands.execute(client, message);
 });
 
