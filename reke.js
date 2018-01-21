@@ -1,4 +1,3 @@
-import * as commands from './commands/commands';
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -11,10 +10,6 @@ client.on('message', message => {
     	message.reply('pong');
   	}
 
-});
-
-client.on('message', message => {
-    commands.execute(client, message);
 });
 // 
 client.login(process.env.BOT_TOKEN);
