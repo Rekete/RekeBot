@@ -1,0 +1,14 @@
+{
+    "ownerId": "",
+    "botToken": "BOT_TOKEN",
+    "defaultStatus": "online",
+    "playingGame": "osumania",
+    "commandPrefix": "-",
+    "websocket": "wss://api.ripple.moe/api/v1/ws",
+    "osuAPIKey": "",
+    "topScores": {
+        "minPP": 1,
+        "channel": "test",
+        "users": []
+    }
+}
