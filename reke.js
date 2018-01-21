@@ -1,3 +1,5 @@
+import * as wifipiano2 from 'wifipiano2';
+import * as utils from '../utils/utils';
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -11,13 +13,6 @@ client.on('message', message => {
   	}
 
 });
-
-// 
-client.login(process.env.BOT_TOKEN);
-    
-    import * as wifipiano2 from 'wifipiano2';
-import * as utils from '../utils/utils';
-
 export async function pp(client, message, args) {
     if (args.length < 3) return message.reply("Por favor usa el formato `-pp (Numero de stars) (numero od) (numero de objetos)`");
 
@@ -38,3 +33,10 @@ export async function pp(client, message, args) {
         .sendMessage(`**Stars:** ${stars} | **OD:** ${od} | **Objectos:** ${utils.addCommas(objectCount)} | **PP:** ${utils.addCommas((Math.floor(pp * 100) / 100))}`);
 
 }
+
+});
+// 
+client.login(process.env.BOT_TOKEN);
+
+    
+
