@@ -1,5 +1,6 @@
 {
     "ownerId": "",
+    "botToken": process.env.BOT_TOKEN,
     "defaultStatus": "online",
     "playingGame": "osumania",
     "commandPrefix": "-",
