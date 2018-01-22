@@ -11,7 +11,9 @@ client.on('ready', () => {
     console.log('Estoy listooo yujuuu!');
 });
 
-bot.on('ready', () => { client.user.setGame('osu!') });
+client.user.setGame('osu!');
+
+});
 
 client.on('message', message => {
     if (message.content === 'Ping') {
