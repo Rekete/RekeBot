@@ -2,6 +2,11 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config/config.json");
 
+import { ripple } from './commands/ripple';
+import { osu } from './commands/osu';
+import { checkMap } from './commands/map';
+import { pp } from './commands/pp';
+
 client.on('ready', () => {
     console.log('Estoy listooo yujuuu!');
 });
