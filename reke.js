@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config/config.json");
-var randomColor = require('randomcolor'); // import the script
-var color = randomColor(); // a hex code for an attractive color
+var randomColor = require('randomcolor'); 
+var color = randomColor(); 
 
 client.on('ready', () => {
     console.log('Estoy listooo yujuuu!');
@@ -13,8 +13,15 @@ client.on("ready", () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'Ping') {
+    if (message.content === 'ping') {
     	message.reply('pong');
+  	}
+
+});
+
+client.on('message', message => {
+    if (message.content === 'lenny') {
+    	message.reply(' ( ͡° ͜ʖ ͡°)');
   	}
 
 });
@@ -58,7 +65,7 @@ client.on("message", async message => {
     message.channel.send(sayMessage);
   }
   
-  if(command === "kick") {
+  if(command === "kickeo") {
     // This command must be limited to mods and admins. In this example we just hardcode the role names.
     // Please read on Array.some() to understand this bit: 
     // https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/some?
@@ -85,7 +92,7 @@ client.on("message", async message => {
 
   }
   
-  if(command === "ban") {
+  if(command === "baneo") {
     // Most of this command is identical to kick, except that here we'll only let admins do it.
     // In the real world mods could ban too, but this is just an example, right? ;)
     if(!message.member.roles.some(r=>["Administrator"].includes(r.name)) )
@@ -114,7 +121,7 @@ client.on("message", async message => {
     
     // Ooooh nice, combined conditions. <3
     if(!deleteCount || deleteCount < 2 || deleteCount > 100)
-      return message.reply("Por favor, di un numero de mensajes, entre 2 y 100, para borrar");
+      return message.reply("Por favor, di un numero de mensajes, entre 2 y 100, para borrar ( ͠° ͟ ͜ʖ ͡°)");
     
     // So we get our messages, and delete them. Simple enough, right?
     const fetched = await message.channel.fetchMessages({count: deleteCount});
@@ -125,7 +132,7 @@ client.on("message", async message => {
     if(command === "osu") {
         
     try {
-        if (args.length == 0) return await message.reply("Por favor, especifica un nombre de usuario de osu! D:");
+        if (args.length == 0) return await message.reply("Por favor, especifica un nombre de usuario de osu! ( ◔ ʖ̯ ◔ )");
 
         const username = args.join("%20");
 
@@ -140,7 +147,7 @@ client.on("message", async message => {
     if(command === "ripple") {
         
     try {
-        if (args.length == 0) return await message.reply("Por favor, especifica un nombre de usuario de ripple! D:");
+        if (args.length == 0) return await message.reply("Por favor, especifica un nombre de usuario de ripple! ლ( ͡° ͜ʖ ͡°ლ)");
 
         const username = args.join("%20");
 
