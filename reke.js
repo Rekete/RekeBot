@@ -7,7 +7,7 @@ client.on('ready', () => {
 });
 
 client.on("ready", () => {
-    client.user.setActivity({game: {name: "osu!", type: 0}});
+    client.user.setPresence({ game: { name: 'osu!', type: 0 } });
 });
 
 client.on('message', message => {
