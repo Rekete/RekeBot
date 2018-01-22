@@ -11,7 +11,8 @@ client.on('ready', () => {
     console.log('Estoy listooo yujuuu!');
 });
 
-client.user.setGame('osu!');
+client.on('ready', () => {
+  client.user.setGame('osu!');
 
 });
 
