@@ -6,9 +6,8 @@ client.on('ready', () => {
     console.log('Estoy listooo yujuuu!');
 });
 
-client.on('ready', () => {
-  client.user.setGame('osu!');
-    
+client.on("ready", () => {
+    client.user.setActivity({game: {name: "osu!", type: 0}});
 });
 
 client.on('message', message => {
