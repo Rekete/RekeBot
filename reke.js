@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config/config.json");
-
+import { randomColor } from 'randomcolor';
 client.on('ready', () => {
     console.log('Estoy listooo yujuuu!');
 });
@@ -121,8 +121,7 @@ client.on("message", async message => {
   }
     
     if(command === "osu") {
-        import { randomColor } from 'randomcolor';
-
+        
 export async function osu(client, message, args) {
     try {
         if (args.length == 0) return await message.reply("Por favor, especifica un nombre de usuario de osu! D:");
@@ -131,7 +130,7 @@ export async function osu(client, message, args) {
 
         const channel = await client.channels.get(message.channel.id);
         const hex = randomColor().replace("#", "");
-        return channel.sendMessage(`http://lemmmy.pw/osusig/sig.php?colour=hex${hex}&uname=${username}&mode=3&pp=1&countryrank`);
+        return message.reply(`http://lemmmy.pw/osusig/sig.php?colour=hex${hex}&uname=${username}&mode=3&pp=1&countryrank`);
 
     } catch (err) {
         console.log(err);
