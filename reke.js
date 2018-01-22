@@ -122,7 +122,6 @@ client.on("message", async message => {
     
     if(command === "osu") {
         
-export async function osu(client, message, args) {
     try {
         if (args.length == 0) return await message.reply("Por favor, especifica un nombre de usuario de osu! D:");
 
