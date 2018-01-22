@@ -6,6 +6,10 @@ client.on('ready', () => {
     console.log('Estoy listooo yujuuu!');
 });
 
+client.on('ready', () => {
+  client.user.setGame('osu!');
+    
+});
 
 client.on('message', message => {
     if (message.content === 'Ping') {
