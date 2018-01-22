@@ -11,6 +11,7 @@ client.on('ready', () => {
     console.log('Estoy listooo yujuuu!');
 });
 
+
 client.on('message', message => {
     if (message.content === 'Ping') {
     	message.reply('pong');
