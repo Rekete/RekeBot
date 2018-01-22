@@ -2,7 +2,7 @@
     "ownerId": "",
     "defaultStatus": "online",
     "playingGame": "osumania",
-    "commandPrefix": "-",
+    "prefix": "-",
     "websocket": "wss://api.ripple.moe/api/v1/ws",
     "osuAPIKey": "",
     "topScores": {
