@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config/config.json");
+var randomColor = require('randomcolor'); // import the script
+var color = randomColor(); // a hex code for an attractive color
 
 client.on('ready', () => {
     console.log('Estoy listooo yujuuu!');
