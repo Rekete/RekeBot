@@ -3,6 +3,7 @@ const client = new Discord.Client();
 const config = require("./config/config.json");
 var randomColor = require('randomcolor'); 
 var color = randomColor(); 
+var wifipiano2 = require('wifipiano2');
 
 client.on('ready', () => {
     console.log('Estoy listooo yujuuu!');
