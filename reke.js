@@ -180,7 +180,21 @@ client.on("message", async message => {
     } catch (err) {
         console.log(err);
     }}
-    
+       if(command === "mapa") {
+        
+        try { 
+            if (args.length < 1) return message.reply("Mapa no encontrado ! WTF! fking normie, dime un titulo, artista y fuente para buscar ejemplo *-mapa osu peppy tutorial*");
+
+    let title = args[0];
+    let artist = args[1];
+    let source = args[2];
+
+        }  
+
+    client.channels.get(message.channel.id)
+        .sendMessage(`http://osusearch.com/search/?title={title}&artist={artist}&source={source}&modes=Mania`);
+
+}}
 });
 // 
 client.login(process.env.BOT_TOKEN);
