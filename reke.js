@@ -2,16 +2,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config/config.json");
 const wifipiano2 = require('wifipiano2');
-
-let scoreData = {
-    starRating: 11.9, 
-    overallDifficulty: 1, 
-    objects: 1878,
-    mods: 'none',
-    score: 441413, 
-    accuracy: 97.20
-};
-console.log(wifipiano2.calculate(scoreData));
 var randomColor = require('randomcolor'); 
 var color = randomColor(); 
 
