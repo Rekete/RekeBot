@@ -195,7 +195,7 @@ client.on("message", async message => {
        if(command === "mapa") {
         
         try { 
-            if (args.length < 1) return message.reply("Mapa no encontrado ! WTF! fking normie, dime un titulo, artista y fuente para buscar ejemplo *-mapa osu peppy tutorial*");
+            if (args.length < 3) return message.reply("Mapa no encontrado ! WTF! fking normie, dime un titulo, artista y fuente para buscar ejemplo *-mapa osu peppy tutorial*");
 
     let title = args[0];
     let artist = args[1];
