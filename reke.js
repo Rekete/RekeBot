@@ -192,11 +192,10 @@ client.on("message", async message => {
     let source = args[2];
 
         }  
+          
+    return message.reply(`http://osusearch.com/search/?title={title}&artist={artist}&source={source}&modes=Mania`);
 
-    client.channels.get(message.channel.id)
-        .sendMessage(`http://osusearch.com/search/?title={title}&artist={artist}&source={source}&modes=Mania`);
-
-}}
+}
 });
 // 
 client.login(process.env.BOT_TOKEN);
