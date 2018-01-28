@@ -147,7 +147,7 @@ client.on("message", async message => {
             accuracy: 100.00
        }); 
 
-    return message.reply(`**Stars:** ${stars} | **OD:** ${od} | **Objectos:** ${utils.addCommas(objectCount)} | **PP:** ${utils.addCommas((Math.floor(pp * 100) / 100))}`);
+    return message.reply(`**Stars:** ${stars} | **OD:** ${od} | **Objectos:** ${objectCount} | **PP:** ${(Math.floor(pp * 100) / 100))}`);
 
 } catch (err) {
         console.log(err);
