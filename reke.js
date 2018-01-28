@@ -14,7 +14,6 @@ let scoreData = {
 console.log(wifipiano2.calculate(scoreData));
 var randomColor = require('randomcolor'); 
 var color = randomColor(); 
-var wifipiano2 = require('wifipiano2');
 
 client.on('ready', () => {
     console.log('Estoy listooo yujuuu!');
