@@ -190,13 +190,12 @@ client.on("message", async message => {
     let title = args[0];
     let artist = args[1];
     let source = args[2];
-
-        }  
           
     return message.reply(`http://osusearch.com/search/?title={title}&artist={artist}&source={source}&modes=Mania`);
-} catch (err) {
+
+    } catch (err) {
         console.log(err);
-}}
+    }}
 });
 // 
 client.login(process.env.BOT_TOKEN);
