@@ -149,7 +149,9 @@ client.on("message", async message => {
 
     return message.reply(`**Stars:** ${stars} | **OD:** ${od} | **Objectos:** ${utils.addCommas(objectCount)} | **PP:** ${utils.addCommas((Math.floor(pp * 100) / 100))}`);
 
-}
+} catch (err) {
+        console.log(err);
+    }}
     
     if(command === "osu") {
         
