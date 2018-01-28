@@ -147,7 +147,7 @@ client.on("message", async message => {
             accuracy: 100.00
        }); 
 
-    return message.reply(`**Stars:** ${stars} | **OD:** ${od} | **Objects:** ${(objectCount)} | **PP:** ${((Math.floor(pp * 100) / 100))}`);
+    return message.reply(`**Estrellas:** ${stars} | **OD:** ${od} | **Objectos:** ${(objectCount)} | **PP:** ${((Math.floor(pp * 100) / 100))}`);
 } catch (err) {
         console.log(err);
     }}
@@ -184,13 +184,13 @@ client.on("message", async message => {
        if(command === "mapa") {
         
         try { 
-            if (args.length < 3) return message.reply("Mapa no encontrado ! WTF! fking normie, dime un titulo, artista y fuente para buscar ejemplo *-mapa osu peppy tutorial*");
+            if (args.length < 1) return message.reply("Mapa no encontrado ! WTF! fking normie, dime un titulo para buscar ejemplo *-mapa tutorial*");
 
-    let title = args[0];
-    let artist = args[1];
-    let source = args[2];
+    let titulo = args[0];
+    let artista = args[1];
+    let fuente = args[2];
           
-    return message.reply(`http://osusearch.com/search/?title=${title}&artist=${artist}&source=${source}&modes=Mania`);
+    return message.reply(`http://osusearch.com/search/?title=${titulo}&modes=Mania`);
 
     } catch (err) {
         console.log(err);
