@@ -201,7 +201,7 @@ client.on("message", async message => {
     let artist = args[1];
     let source = args[2];
           
-    return message.reply(`http://osusearch.com/search/?title={title}&artist={artist}&source={source}&modes=Mania`);
+    return message.reply(`http://osusearch.com/search/?title=${title}&artist=${artist}&source=${source}&modes=Mania`);
 
     } catch (err) {
         console.log(err);
