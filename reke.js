@@ -147,8 +147,7 @@ client.on("message", async message => {
             accuracy: 100.00
         }  
 
-    client.channels.get(message.channel.id)
-        .sendMessage(`**Stars:** ${stars} | **OD:** ${od} | **Objectos:** ${utils.addCommas(objectCount)} | **PP:** ${utils.addCommas((Math.floor(pp * 100) / 100))}`);
+    return message.reply(`**Stars:** ${stars} | **OD:** ${od} | **Objectos:** ${utils.addCommas(objectCount)} | **PP:** ${utils.addCommas((Math.floor(pp * 100) / 100))}`);
 
 }}
     
