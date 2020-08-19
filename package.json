@@ -1,7 +1,7 @@
 {
   "name": "RekeBot",
   "description": "Test",
-  "version": "0.0.1",
+  "version": "0.0.112",
   "main": "reke.js",
   "scripts": {
     "start": "node reke.js"
