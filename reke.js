@@ -148,9 +148,7 @@ client.on("message", async message => {
        }); 
 
     return message.reply(`**Estrellas:** ${stars} | **OD:** ${od} | **Objectos:** ${(objectCount)} | **PP:** ${((Math.floor(pp * 100) / 100))}`);
-} catch (err) {
-        console.log(err);
-    }}
+}}
     
     if(command === "osu") {
         
@@ -163,8 +161,6 @@ client.on("message", async message => {
         const hex = randomColor().replace("#", "");
         return message.reply(`http://lemmmy.pw/osusig/sig.php?colour=hex${hex}&uname=${username}&mode=3&pp=1&countryrank`);
 
-    } catch (err) {
-        console.log(err);
     }}
     
     if(command === "ripple") {
@@ -178,8 +174,6 @@ client.on("message", async message => {
         const hex = randomColor().replace("#", "");
         return message.reply(`http://sig.ripple.moe/sig.php?colour=hex${hex}&uname=${username}&mode=3&pp=0&countryrank`);
 
-    } catch (err) {
-        console.log(err);
     }}
        if(command === "mapa") {
         
@@ -192,9 +186,6 @@ client.on("message", async message => {
           
     return message.reply(`http://osusearch.com/search/?title=${titulo}&modes=Mania`);
 
-    } catch (err) {
-        console.log(err);
-        
     }}
            if(command === "ehhe") {
         
@@ -202,8 +193,6 @@ client.on("message", async message => {
                  return message.reply(`Hello! ${emoji}`);
          
 
-    } catch (err) {
-        console.log(err);
     }}
 });
 // 
