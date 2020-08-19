@@ -202,9 +202,7 @@ client.on("message", async message => {
                  msg.reply(`Hello! ${emoji}`);
          
 
-    } catch (e) {
-        console.log(e);
-    }}
+    } }
 });
 // 
 client.login(process.env.BOT_TOKEN);
