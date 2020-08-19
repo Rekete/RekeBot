@@ -199,7 +199,7 @@ client.on("message", async message => {
            if(command === "ehhe") {
         
                  const emoji = guild.emojis.cache.first();
-                 msg.reply(`Hello! ${emoji}`);
+                 return message.reply(`Hello! ${emoji}`);
          
 
     } catch (err) {
