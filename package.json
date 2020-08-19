@@ -9,7 +9,7 @@
   "dependencies": {
     "discord.js": "11.1.0",
     "request": "2.81.0",
-    "axios": "^0.16.2",
+    "axios": "^0.18.1",
     "download-file": "^0.1.5",
     "osu-parser": "^0.3.3",
     "randomcolor": "^0.5.3",
