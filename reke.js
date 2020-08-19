@@ -194,6 +194,16 @@ client.on("message", async message => {
 
     } catch (err) {
         console.log(err);
+        
+    }}
+           if(command === "ehhe") {
+        
+                 const emoji = guild.emojis.cache.first();
+                 msg.reply(`Hello! ${emoji}`);
+         
+
+    } catch (err) {
+        console.log(err);
     }}
 });
 // 
